@@ -1,0 +1,377 @@
+---
+title: 'Yazılımın ilk 250 günü - Part 7'
+date: '2022-12-04'
+order: 7
+readtime: '31'
+photo: '7.jpg'
+pinned: false
+summary: '61. Gün. Bugün sizin bize yorumlamamız için gönderdiğiniz javascript kodlarını hayranlıkla okudum. O kadar iyi düşünülmüş ki ben 5 gün düşünsem yine de yapamazdım gibi geldi. 2 ayda okur yazarlık edinildi fakat iyi bir yazar,edebiyatçı,şair olmak için çok uzun bir yol var bugün yine anladım. İngilizce için söylenen “anlıyorum ama konuşamıyorum” ifadesini çok iyi hissettim bugün. Evet yazılan kodun amacını, kullanılan terimlerin anlamını biliyorum ya da kısa bir araştırmayla hemen bulabiliyorum ama iş yapmaya gelince kıvrak ve zeki bir yaklaşımı hâlâ sergileyemiyorum. Biraz da tecrübe ile gelişir diye umuyorum. Çok inanıyorum olacağına, çünkü çok seviyorum. Çok fazla umut, inanç,sevgi gibi pozitif içerikli kelimeler kullandım sanırım. Sebebi ise mesai bitiminde DOM ve event handlers konusuna tekrar bakarken dinlediğim Daft Punk şarkısı sanırım. “Work it harder, make it better Do it faster, makes us stronger More than ever, hour after hour Work is never over”'
+---
+
+
+## <Trans i18nKey="blogDetail:part7.1"/>
+<Trans i18nKey="blogDetail:part7.2"/>
+_<Trans i18nKey="blogDetail:part7.3"/>_
+> <Trans i18nKey="blogDetail:part7.4"/> <br/>
+<Trans i18nKey="blogDetail:part7.5"/> <br/>
+<Trans i18nKey="blogDetail:part7.6"/> <br/>
+<Trans i18nKey="blogDetail:part7.7"/>
+
+
+## <Trans i18nKey="blogDetail:part7.8"/>
+<Trans i18nKey="blogDetail:part7.9"/>
+
+
+## <Trans i18nKey="blogDetail:part7.10"/>
+<Trans i18nKey="blogDetail:part7.11"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.12"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.13"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.14"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.15"/>
+
+
+## <Trans i18nKey="blogDetail:part7.16"/>
+<Trans i18nKey="blogDetail:part7.17"/>
+
+
+## <Trans i18nKey="blogDetail:part7.18"/>
+<Trans i18nKey="blogDetail:part7.19"/>
+- <Trans i18nKey="blogDetail:part7.20"/>
+- <Trans i18nKey="blogDetail:part7.21"/>
+- <Trans i18nKey="blogDetail:part7.22"/>
+  - <Trans i18nKey="blogDetail:part7.23"/>
+  - <Trans i18nKey="blogDetail:part7.24"/>
+  - <Trans i18nKey="blogDetail:part7.25"/>
+  - <Trans i18nKey="blogDetail:part7.26"/>
+  - <Trans i18nKey="blogDetail:part7.27"/>
+- __<Trans i18nKey="blogDetail:part7.28"/>__ <br/>
+<Trans i18nKey="blogDetail:part7.29"/>
+- __<Trans i18nKey="blogDetail:part7.30"/>__ <br/>
+<Trans i18nKey="blogDetail:part7.31"/>
+- __<Trans i18nKey="blogDetail:part7.32"/>__ <br/>
+  - <Trans i18nKey="blogDetail:part7.33"/>
+  - <Trans i18nKey="blogDetail:part7.34"/>
+  - <Trans i18nKey="blogDetail:part7.35"/>
+- __<Trans i18nKey="blogDetail:part7.36"/>__ <br/>
+<Trans i18nKey="blogDetail:part7.37"/>
+- __<Trans i18nKey="blogDetail:part7.38"/>__ <br/>
+<Trans i18nKey="blogDetail:part7.39"/>
+- __Single Responsibility Principle__ <br/>
+<Trans i18nKey="blogDetail:part7.40"/> ___<Trans i18nKey="blogDetail:part7.41"/>___
+- ___<Trans i18nKey="blogDetail:part7.42"/>___
+<Trans i18nKey="blogDetail:part7.43"/>
+><Trans i18nKey="blogDetail:part7.44"/>
+
+<Trans i18nKey="blogDetail:part7.45"/>
+
+- __Liskov Substitute Principle__ <br/>
+<Trans i18nKey="blogDetail:part7.46"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.47"/>
+- __Interface Segregation Principle__ <br/>
+<Trans i18nKey="blogDetail:part7.48"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.49"/>
+> <Trans i18nKey="blogDetail:part7.50"/>
+- __Dependency Inversion Principle__ <br/>
+<Trans i18nKey="blogDetail:part7.51"/>
+### Design Patterns
+> <Trans i18nKey="blogDetail:part7.52"/>
+<br/>
+> <Trans i18nKey="blogDetail:part7.53"/>
+<br/>
+> <Trans i18nKey="blogDetail:part7.54"/>
+
+#### Creational Design Patterns
+<Trans i18nKey="blogDetail:part7.55"/>
+- __Singleton__ <br/>
+<Trans i18nKey="blogDetail:part7.56"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.57"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.58"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.59"/>
+  - __<Trans i18nKey="blogDetail:part7.60"/>__
+    - <Trans i18nKey="blogDetail:part7.61"/>
+    - <Trans i18nKey="blogDetail:part7.62"/>
+    - <Trans i18nKey="blogDetail:part7.63"/>
+    - <Trans i18nKey="blogDetail:part7.64"/>
+    - <Trans i18nKey="blogDetail:part7.65"/>
+_<Trans i18nKey="blogDetail:part7.66"/>_ 
+> “When you think you need a global, you’re probably making a terrible design misktake”.
+
+<Trans i18nKey="blogDetail:part7.67"/>
+- <Trans i18nKey="blogDetail:part7.68"/>
+- <Trans i18nKey="blogDetail:part7.69"/>
+- <Trans i18nKey="blogDetail:part7.70"/>
+- <Trans i18nKey="blogDetail:part7.71"/>
+- <Trans i18nKey="blogDetail:part7.72"/>
+
+<Trans i18nKey="blogDetail:part7.73"/>
+- <Trans i18nKey="blogDetail:part7.74"/>
+- <Trans i18nKey="blogDetail:part7.75"/>
+- <Trans i18nKey="blogDetail:part7.76"/>
+
+<Trans i18nKey="blogDetail:part7.77"/>
+
+1. Simple Factory
+1. Factory Method
+1. Abstract Factory
+1. Builder
+
+<Trans i18nKey="blogDetail:part7.78"/>
+
+
+## <Trans i18nKey="blogDetail:part7.79"/>
+- __Simple Factory__ <br/>
+<Trans i18nKey="blogDetail:part7.80"/>
+
+_In plain words:_
+> “Simple factory simply generates an instance for client without exposing any instantiation logic to the client”.
+
+<Trans i18nKey="blogDetail:part7.81"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.82"/>
+
+- __Factory Method__ <br/>
+<Trans i18nKey="blogDetail:part7.83"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.84"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.85"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.86"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.87"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.88"/> 
+
+_<Trans i18nKey="blogDetail:part7.89"/>_
+1. <Trans i18nKey="blogDetail:part7.90"/>
+1. <Trans i18nKey="blogDetail:part7.91"/>
+1. <Trans i18nKey="blogDetail:part7.92"/>
+1. <Trans i18nKey="blogDetail:part7.93"/>
+1. <Trans i18nKey="blogDetail:part7.94"/>
+1. <Trans i18nKey="blogDetail:part7.95"/>
+1. <Trans i18nKey="blogDetail:part7.96"/>
+
+- __Abstract Factory__ <br/>
+<Trans i18nKey="blogDetail:part7.97"/> 
+<br/>
+<Trans i18nKey="blogDetail:part7.98"/> 
+<br/>
+<Trans i18nKey="blogDetail:part7.99"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.100"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.101"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.102"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.103"/>
+
+> “ The abstract factory pattern provides a way to encapsulate a group of indivual factories that have a common theme without specifying their concrete classes.” - Wikipedia
+
+<Trans i18nKey="blogDetail:part7.104"/>
+1. You need to supply one or more parameters only known at runtime before you can resolve a dependency,
+1. The lifetime of the dependency is conceptually shorter than the lifetime of the consumer.
+
+<Trans i18nKey="blogDetail:part7.105"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.106"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.107"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.108"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.109"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.110"/>
+
+- __Builder__ <br/>
+<Trans i18nKey="blogDetail:part7.111"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.112"/>
+
+_In plain words:_ <br/>
+<Trans i18nKey="blogDetail:part7.113"/>
+
+> “It’s a design pattern with the intentions of finding a solution to the telescoping constructor anti-pattern”. - Wikipedia
+
+<Trans i18nKey="blogDetail:part7.114"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.115"/>
+
+> “The builder pattern is a good choice when designing classes whose constructors or static factories would have more than a handful of parameters”. - Joschua Bloch
+
+<Trans i18nKey="blogDetail:part7.116"/>
+
+_<Trans i18nKey="blogDetail:part7.117"/>_
+1. <Trans i18nKey="blogDetail:part7.118"/>
+1. <Trans i18nKey="blogDetail:part7.119"/>
+1. <Trans i18nKey="blogDetail:part7.120"/>
+1. <Trans i18nKey="blogDetail:part7.121"/>
+
+- __Prototype__ <br/>
+<Trans i18nKey="blogDetail:part7.122"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.123"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.124"/>
+
+_<Trans i18nKey="blogDetail:part7.125"/>_
+
+#### Structural Design Patterns
+<Trans i18nKey="blogDetail:part7.126"/>
+
+- __Adapter__ <br/>
+<Trans i18nKey="blogDetail:part7.127"/>
+
+_In plain words:_
+> “Adapter pattern allows the interface of an existing class to be used as another interface.  Often used to make existing classes work with others without modifying their source code”.
+
+<Trans i18nKey="blogDetail:part7.128"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.129"/>
+
+- __Bridge__ <br/>
+<Trans i18nKey="blogDetail:part7.130"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.131"/>
+
+_In plain words:_
+<Trans i18nKey="blogDetail:part7.132"/>
+> “Decouple an abstraction from its implementation so that the two can vary independently”. - Wikipedia
+
+>  “Adapter makes things work after they’re designed; Bridge makes them work before they are”. - GOF (page 219)
+
+<Trans i18nKey="blogDetail:part7.133"/>
+
+
+## <Trans i18nKey="blogDetail:part7.134"/>
+- __Composite__ <br/>
+<Trans i18nKey="blogDetail:part7.135"/>
+_In plain words:_
+<Trans i18nKey="blogDetail:part7.136"/>
+> <Trans i18nKey="blogDetail:part7.137"/>
+
+_<Trans i18nKey="blogDetail:part7.138"/>_ <Trans i18nKey="blogDetail:part7.139"/>
+
+_<Trans i18nKey="blogDetail:part7.140"/>_ <Trans i18nKey="blogDetail:part7.141"/>
+
+> "Use the composite pattern when You want to represent represent part-whole relationship; You want clients to be able to ignore th difference between compositions of objects and indivual objects. Clients will treat all objects in the composite structure uniformly." - GOF
+
+- __Decorator__ <br/>
+<Trans i18nKey="blogDetail:part7.142"/>
+
+> <Trans i18nKey="blogDetail:part7.143"/>
+
+- __Facade__ <br/>
+<Trans i18nKey="blogDetail:part7.144"/>
+
+_In plain words:_
+> "Facade pattern provides a simplified interface to a complex system".
+
+<Trans i18nKey="blogDetail:part7.145"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.146"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.147"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.148"/>
+
+- __Flyweight__ <br/>
+<Trans i18nKey="blogDetail:part7.149"/>
+
+_In plain words:_
+>"It is used to minimize memory usage or computational expenses by sharing as much as possible with similar objects."
+
+> <Trans i18nKey="blogDetail:part7.150"/>
+
+<Trans i18nKey="blogDetail:part7.151"/>
+> <Trans i18nKey="blogDetail:part7.152"/>
+
+<Trans i18nKey="blogDetail:part7.153"/>
+
+- __Proxy__ <br/>
+<Trans i18nKey="blogDetail:part7.154"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.155"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.156"/>
+> "Control and manage access to the object they are protecting".
+
+> <Trans i18nKey="blogDetail:part7.157"/>
+
+> <Trans i18nKey="blogDetail:part7.158"/>
+
+__Proxy__: <Trans i18nKey="blogDetail:part7.159"/>
+<br/>
+__Decorator__: <Trans i18nKey="blogDetail:part7.160"/>
+<br/>
+__Adapter__:  <Trans i18nKey="blogDetail:part7.161"/>
+<br/>
+__Bridge__: <Trans i18nKey="blogDetail:part7.162"/>
+<br/>
+__Facade__: <Trans i18nKey="blogDetail:part7.163"/>
+
+#### Behavioral Design Patterns
+<Trans i18nKey="blogDetail:part7.164"/>
+- __Chain of Responsibility__ <br/>
+<Trans i18nKey="blogDetail:part7.165"/>
+_In plain words:_
+> <Trans i18nKey="blogDetail:part7.166"/>
+
+<Trans i18nKey="blogDetail:part7.167"/>
+
+- __Command__
+
+_In plain words:_
+> <Trans i18nKey="blogDetail:part7.168"/>
+
+> <Trans i18nKey="blogDetail:part7.169"/>
+
+<Trans i18nKey="blogDetail:part7.170"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.171"/>
+
+
+## <Trans i18nKey="blogDetail:part7.172"/>
+### <Trans i18nKey="blogDetail:part7.173"/>
+#### <Trans i18nKey="blogDetail:part7.174"/>
+<Trans i18nKey="blogDetail:part7.175"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.176"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.177"/>
+
+#### <Trans i18nKey="blogDetail:part7.178"/>
+<Trans i18nKey="blogDetail:part7.179"/>
+
+##### Class Diagrams
+<Trans i18nKey="blogDetail:part7.180"/>
+1. Class \{name, attribute, method\}
+1. Objects
+1. Interface
+1. Relationships \{inheritance (generalization), implementation (realization), association, dependency, composition, aggregation\}
+1. Associaitons \{bidirectional, unidirectional\}
+
+<Trans i18nKey="blogDetail:part7.181"/>
+<br/>
+<Trans i18nKey="blogDetail:part7.182"/>
+
+#### <Trans i18nKey="blogDetail:part7.183"/>
+<Trans i18nKey="blogDetail:part7.184"/>
+
+
+## <Trans i18nKey="blogDetail:part7.185"/>
+<Trans i18nKey="blogDetail:part7.186"/>
+
+
+## <Trans i18nKey="blogDetail:part7.187"/>
+<Trans i18nKey="blogDetail:part7.188"/>

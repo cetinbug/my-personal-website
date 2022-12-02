@@ -1,0 +1,155 @@
+---
+title: 'Yazılımın ilk 250 günü - Part 12'
+date: '2022-12-04'
+order: 12
+readtime: '13'
+photo: '12.jpg'
+pinned: false
+summary: '...Yukarıdaki  örnekler aslında tamamen Java dilinde nesne ve sınıf arasındaki ilişki üzerine kuruludur. Şimdi ise PHP’de durumun nasıl olduğuna bakalım: Esas kaynak olarak PHP Manual’ına bakınca da nesne ve sınıfın yine Java’ya benzer şekilde bir ayrıma sahip olduğunu görülmektedir. Peki bu ayrım her dilde var mı? İşte burası karışık çünkü her dil farklı bir konsepte sahip anladığım kadarı ile. Objective-C’de her sınıfın bir nesne olduğunu okudum. Her sınıf bir nesne imiş. Ama bu sınıflarda bir nesne olduğu için farklı bir class’tan türemek zorunda ve bu class’a da metaclass adı verilmiş. Bir nesnenin sıradan instance ifadesi oluşu gibi, metaclass’ta bir sınıf nesnesinin ifadesiymiş (Hiç bilmediğim, ama bilenleri referans alarak söylediğim için bol miktarda -miş’li zamana yer verdim).Smalltalk’ta ise sınıfların, sayıların, stringlerin, hatta programın kendisi dahi nesneymiş. Kafam biraz karıştı açıkçası ama raylar yerine oturacak diye tahmin ediyorum.'
+---
+
+## <Trans i18nKey="blogDetail:part12.1"/>
+<Trans i18nKey="blogDetail:part12.2"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part12.3"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part12.4"/>
+
+
+## <Trans i18nKey="blogDetail:part12.5"/>
+<Trans i18nKey="blogDetail:part12.6"/> 
+
+_<Trans i18nKey="blogDetail:part12.7"/>_
+
+- Class <br/>
+  <Trans i18nKey="blogDetail:part12.8"/>
+- Object <br/>
+  <Trans i18nKey="blogDetail:part12.9"/>
+- Reference <br/>
+  <Trans i18nKey="blogDetail:part12.10"/>
+- Dereferencing <br/>
+  <Trans i18nKey="blogDetail:part12.11"/>
+
+<Trans i18nKey="blogDetail:part12.12"/>
+
+```php
+<?php
+class EvSinifi{
+    public function construct(){}
+    public function doSomething(){
+        echo "hi there, i'm bora :)
+ <br>";
+    }
+}
+$evim = new EvSinifi();  //1
+caller($evim);  //2
+$evim->doSomething();  //4
+ 
+function caller(EvSinifi $digerEvim){
+    $digerEvim = new EvSinifi(); //3
+}
+```
+<Trans i18nKey="blogDetail:part12.13"/>
+1. <Trans i18nKey="blogDetail:part12.14"/>
+1. <Trans i18nKey="blogDetail:part12.15"/>
+1. <Trans i18nKey="blogDetail:part12.16"/>
+
+_<Trans i18nKey="blogDetail:part12.17"/>_
+1.  <Trans i18nKey="blogDetail:part12.18"/>
+1. <Trans i18nKey="blogDetail:part12.19"/>
+1. <Trans i18nKey="blogDetail:part12.20"/>
+1. <Trans i18nKey="blogDetail:part12.21"/>
+
+_<Trans i18nKey="blogDetail:part12.22"/>_
+<Trans i18nKey="blogDetail:part12.23"/>
+
+_<Trans i18nKey="blogDetail:part12.24"/>_
+```java
+**String s;
+```
+<Trans i18nKey="blogDetail:part12.25"/>
+```java
+**String s = "asdf";
+```
+<Trans i18nKey="blogDetail:part12.26"/>
+```java
+**String s = new String("asdf");
+```
+<Trans i18nKey="blogDetail:part12.27"/> [PHP Manual- OOP Reference](https://www.php.net/manual/en/language.oop5.basic.php)
+<br/>
+<Trans i18nKey="blogDetail:part12.28"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part12.29"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part12.30"/>
+
+
+## <Trans i18nKey="blogDetail:part12.31"/>
+<Trans i18nKey="blogDetail:part12.32"/>
+```php
+$a = $b = deger; 
+```
+<Trans i18nKey="blogDetail:part12.33"/>
+```php
+$a = &$b = deger;
+```
+<Trans i18nKey="blogDetail:part12.34"/>
+<br/>
+<Trans i18nKey="blogDetail:part12.35"/>
+<br/>
+<Trans i18nKey="blogDetail:part12.36"/>
+<br/>
+<Trans i18nKey="blogDetail:part12.37"/> [Pointer Reference](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/cp4_PointerReference.html)
+<br/>
+<Trans i18nKey="blogDetail:part12.38"/>
+
+
+## <Trans i18nKey="blogDetail:part12.39"/>
+<Trans i18nKey="blogDetail:part12.40"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part12.41"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part12.42"/>
+
+<Trans i18nKey="blogDetail:part12.43"/>
+- <Trans i18nKey="blogDetail:part12.44"/>
+- <Trans i18nKey="blogDetail:part12.45"/> [How to get the client ip address in php](https://stackoverflow.com/questions/3003145/how-to-get-the-client-ip-address-in-php#comment50230065_3003233) <Trans i18nKey="blogDetail:part12.46"/> 
+
+
+## <Trans i18nKey="blogDetail:part12.47"/> 
+<Trans i18nKey="blogDetail:part12.48"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part12.49"/>
+
+
+## <Trans i18nKey="blogDetail:part12.50"/>
+<Trans i18nKey="blogDetail:part12.51"/>
+
+
+## <Trans i18nKey="blogDetail:part12.52"/>
+<Trans i18nKey="blogDetail:part12.53"/>
+
+
+## <Trans i18nKey="blogDetail:part12.54"/>
+<Trans i18nKey="blogDetail:part12.55"/> 
+<br/><br/>
+<Trans i18nKey="blogDetail:part12.56"/> 
+
+
+## <Trans i18nKey="blogDetail:part12.57"/> 
+<Trans i18nKey="blogDetail:part12.58"/>  [Why is processing a sorted array faster than processing an unsorted array](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
+
+<Trans i18nKey="blogDetail:part12.59"/>    
+_<Trans i18nKey="blogDetail:part12.60"/>_ 
+> <Trans i18nKey="blogDetail:part12.61"/>
+
+
+## <Trans i18nKey="blogDetail:part12.62"/>
+<Trans i18nKey="blogDetail:part12.63"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part12.64"/> [On structuring php projects](https://www.nikolaposa.in.rs/blog/2017/01/16/on-structuring-php-projects/).
+<br/>
+<Trans i18nKey="blogDetail:part12.65"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part12.66"/>
+

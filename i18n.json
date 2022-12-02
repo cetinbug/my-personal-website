@@ -1,0 +1,10 @@
+{
+    "locales": ["en", "tr"],
+    "defaultLocale": "en",
+    "pages": {
+      "*": ["common", "blogDetail"],
+      "/": ["index"],
+      "/blog": ["blog"],
+      "/projects" : ["projects"]
+    }
+  }

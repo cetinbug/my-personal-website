@@ -1,0 +1,11 @@
+{
+    "title":  "Yazılım Geliştirici",
+    "company": "Oyuneks",
+    "edu" : "Lisans, Uzay Mühendisliği",
+    "eduName" : "İTÜ",
+    "location" : "Antalya, Türkiye",
+    "firstPar" : "Selam, ismim Buğra. Bir yazılım geliştiriciyim. Bu websitesi internet üzerinde bir kimlik oluşturmak ve kendimi ifade etmek amacı ile react/next.js kullanılarak oluşturuldu",
+    "secPar" : "Yazılım hakkında az zamanda çok şey öğrenip uyguladığını ve daha da fazlasını öğrenip kendini geliştireceğine ve çevresine daha fazla değer katacağına inanan bir bireyim.",
+    "thirdPar" : "İlgili konularda bilgi birikimi ve deneyime sahibim",
+    "fourthPar" : "Bana bu yollardan ulaşabilirsin"
+}

@@ -1,0 +1,122 @@
+---
+title: 'Yazılımın ilk 250 günü - Part 14' 
+date: '2022-12-04'
+order: 14
+readtime: '15'
+photo: '14.jpg'
+pinned: false
+summary: '...Bu sabah sizin yaptıklarınızı dikkatle izledim çünkü babamın aşçılıktan öğrenip bana sıkça söylediği “elin değil gözün hırsız olsun” düsturu ile davrandım. Sonrasında drawer navigasyonunu yapmaya çalıştığımda ise yine version hatasından dolayı bir kütüphane ile ilgili hata ile karşılaştım. Sorunu Google’ladığımda farklı çözüm yöntemleri buldum. Dosyalardaki bazı kodlarda değişiklikler yaparak ve ilgili kütüphaneyi kaldırıp farklı bir sürümünü ekleyerek çözüme ulaşabildim. Başta daha da bozarım düşüncesi ile elim titrese de sonrasında “korkanın çocuğu olmaz” düsturu ile elimi korkak alıştırmadan ve dikkatle çözüme ulaştım. Sonrasında sayfaları dosya ve klasör yapısına dönüştürme problem vardı. Kendi oluşturduğum proje ölçeğinde bir yapı kurmaya çalıştım. Web’te bu konu üzerinde araştırma yaptığımda arketipe göre değil özelliğe (group by feature, or group by archetype) göre sınıflandırma yaparak bir dosya-klasör düzeni kurmamız genelde öğütleniyordu. Mobil tarafında da aynı ilkeyi düşünsem de örneklerde en sık screen-component yapısını gördüğümden dolayı on duruma yakınsayan bir çözüm oldu. Son verilen görevde yarın kaldığım yerden devam edeceğim. '
+---
+
+## <Trans i18nKey="blogDetail:part14.1"/>
+<Trans i18nKey="blogDetail:part14.2"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part14.3"/>
+
+1. <Trans i18nKey="blogDetail:part14.4"/>
+1. <Trans i18nKey="blogDetail:part14.5"/>
+1. <Trans i18nKey="blogDetail:part14.6"/>
+    <Trans i18nKey="blogDetail:part14.7"/>
+
+<Trans i18nKey="blogDetail:part14.8"/> [<Trans i18nKey="blogDetail:part14.9"/>](https://medium.com/kodcular/react-proje-mimarisi-6cebf166e292).
+
+<Trans i18nKey="blogDetail:part14.10"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part14.11"/>
+<br/>
+<Trans i18nKey="blogDetail:part14.12"/> _<Trans i18nKey="blogDetail:part14.13"/>_
+
+<Trans i18nKey="blogDetail:part14.14"/> _<Trans i18nKey="blogDetail:part14.15"/>_
+
+[<Trans i18nKey="blogDetail:part14.16"/>](https://medium.com/kodcular/react-state-management-redux-vs-context-api-ba034f79d880) <Trans i18nKey="blogDetail:part14.17"/>
+
+<Trans i18nKey="blogDetail:part14.18"/>
+
+<Trans i18nKey="blogDetail:part14.19"/> [<Trans i18nKey="blogDetail:part14.20"/>](https://github.com/facebook/react/issues/15156#issuecomment-474590693) <Trans i18nKey="blogDetail:part14.21"/>
+
+<Trans i18nKey="blogDetail:part14.22"/>
+
+
+## <Trans i18nKey="blogDetail:part14.23"/>
+<Trans i18nKey="blogDetail:part14.24"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part14.25"/>
+
+
+## <Trans i18nKey="blogDetail:part14.26"/>
+<Trans i18nKey="blogDetail:part14.27"/>
+
+
+## <Trans i18nKey="blogDetail:part14.28"/>
+<Trans i18nKey="blogDetail:part14.29"/> [<Trans i18nKey="blogDetail:part14.30"/>](https://stackoverflow.com/a/71092231/14488190) <Trans i18nKey="blogDetail:part14.31"/>
+
+<Trans i18nKey="blogDetail:part14.32"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part14.33"/>
+
+
+## <Trans i18nKey="blogDetail:part14.34"/>
+<Trans i18nKey="blogDetail:part14.35"/>
+
+
+## <Trans i18nKey="blogDetail:part14.36"/>
+<Trans i18nKey="blogDetail:part14.37"/>
+
+@react-navigation/stack 
+
+@react-navigation/native-stack
+
+<Trans i18nKey="blogDetail:part14.38"/>
+
+
+## <Trans i18nKey="blogDetail:part14.39"/>
+<Trans i18nKey="blogDetail:part14.40"/>
+
+
+## <Trans i18nKey="blogDetail:part14.41"/>
+<Trans i18nKey="blogDetail:part14.42"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part14.43"/>
+
+
+## <Trans i18nKey="blogDetail:part14.44"/>
+<Trans i18nKey="blogDetail:part14.45"/>
+
+<Trans i18nKey="blogDetail:part14.46"/>  [<Trans i18nKey="blogDetail:part14.47"/>](https://stackoverflow.com/a/21963136/14488190) <Trans i18nKey="blogDetail:part14.48"/>
+
+<Trans i18nKey="blogDetail:part14.49"/>
+
+<Trans i18nKey="blogDetail:part14.50"/> [call(pass)-by-sharing](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_sharing) <Trans i18nKey="blogDetail:part14.51"/>
+
+<Trans i18nKey="blogDetail:part14.52"/>([<Trans i18nKey="blogDetail:part14.53"/>](https://stackoverflow.com/questions/518000/is-javascript-a-pass-by-reference-or-pass-by-value-language) <Trans i18nKey="blogDetail:part14.54"/>):
+
+```js
+function changeStuff(a, b, c)
+{
+  a = a * 10;
+  b.item = "changed";
+  c = {item: "changed"};
+}
+
+var num = 10;
+var obj1 = {item: "unchanged"};
+var obj2 = {item: "unchanged"};
+
+changeStuff(num, obj1, obj2);
+
+console.log(num);  //10
+console.log(obj1.item);  //changed
+console.log(obj2.item);  //unchanged
+```
+
+<Trans i18nKey="blogDetail:part14.55"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part14.56"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part14.57"/>
+
+
+## <Trans i18nKey="blogDetail:part14.58"/>
+<Trans i18nKey="blogDetail:part14.59"/>
+<br/><br/>
+<Trans i18nKey="blogDetail:part14.60"/>
